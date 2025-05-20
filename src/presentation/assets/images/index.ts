@@ -10,8 +10,10 @@ import MERITOCRACIA from './MERITOCRACIA.jpg'
 import SIMPLICIDADE from './SIMPLICIDADE.jpg'
 import VISAO from './VISAO.jpg'
 import MISSAO from './MISSAO.jpg'
+import HEADER_IMAGE from './HEADER_IMAGE.jpg'
 
 const IMAGE = {
+  HEADER_IMAGE,
   LOGO_HOT_INVEST,
   CARTAO,
   EQUIPE_REUNIDA,

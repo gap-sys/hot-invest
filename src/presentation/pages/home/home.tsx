@@ -2,7 +2,7 @@ import { Meta, Navbar, Header, Footer, StepsOpen, Card, FAQ, Service, Benefits, 
 import { IMAGE } from 'src/presentation/assets'
 
 const Home = () => {
-  const IMAGES = IMAGE.EQUIPE_REUNIDA
+  const IMAGES = IMAGE.HEADER_IMAGE
 
   return (
     <div>
