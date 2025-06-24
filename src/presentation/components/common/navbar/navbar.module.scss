@@ -32,7 +32,7 @@
   .nav-items {
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1184px) {
       @include display-flex(center, center);
 
       .nav-link {
@@ -91,7 +91,7 @@
     color: inherit;
   }
 
-  @media (max-width: 1124px) {
+  @media (max-width: 1184px) {
     display: none;
   }
 
@@ -101,7 +101,7 @@
   }
 
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1184px) {
     display: flex;
   }
 }
@@ -111,7 +111,7 @@
   display: block;
   font-size: $font-medium;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1184px) {
     display: none;
   }
 }
@@ -136,7 +136,7 @@
     color: inherit;
   }
 
-  @media (max-width: 1124px) {
+  @media (max-width: 1184px) {
     display: none;
   }
 
@@ -145,7 +145,7 @@
   }
 
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1184px) {
     display: flex;
   }
 }

@@ -33,13 +33,22 @@ const NavMobile = ({ closeMenu }: NavMobileProps) => {
             </NavItem>
           ))}
         </div>
-        <aside className={S['right-section']}>
-          <Link href="/abrir-conta" legacyBehavior>
-            <a className={S.link}>
-              <span>Quero ser HotInvest</span>
+        <div className={S['right-section-container']}>
+          <aside className={S['right-section']}>
+            <Link href="/abrir-conta" legacyBehavior>
+              <a className={S.link}>
+                <span>Quero ser HotInvest</span>
+              </a>
+            </Link>
+          </aside>
+          <aside className={S['right-section2']}>
+            <a href="https://hotinvest.dbs.moneyp.com.br/login" target="_blank" rel="noopener noreferrer">
+              <a className={S.link}>
+                <span>Acesse sua conta</span>
+              </a>
             </a>
-          </Link>
-        </aside>
+          </aside>
+        </div>
       </nav>
     </div>
   )
