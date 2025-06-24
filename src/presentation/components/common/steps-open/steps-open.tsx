@@ -70,7 +70,7 @@ const StepsOpen = () => {
     return (
         <section className={styles.container}>
             <div id="abra-sua-conta" className={styles.section}>
-                <h2 className={styles.title}>Abra sua conta no Hot<span style={{ color: "#16487E", fontStyle: "italic" }}>Invest</span> em poucos minutos</h2>
+                <h2 className={styles.title}>Abra sua conta no Hot<span style={{ color: "#16487E" }}>Invest</span> em poucos minutos</h2>
                 <div className={styles.cardWrapper}>
                     <div className={styles.card} ref={containerRef}>
                         <div className={styles.lineContainer}>

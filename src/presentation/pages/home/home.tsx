@@ -19,7 +19,7 @@ const Home = () => {
           <>
             Não é só um banco<br />
             É o futuro, do seu jeito<br />
-            É <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E", fontStyle: "italic" }}>Invest</span>
+            É <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E"}}>Invest</span>
           </>
         }
         image={IMAGES.src}

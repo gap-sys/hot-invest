@@ -19,7 +19,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.columns}>
-
         <div className={styles.column}>
           <h4>Ouvidoria</h4>
           <ul>
@@ -84,7 +83,7 @@ export default function Footer() {
 
       <div className={styles.bottom}>
         <div className={styles.logo}>
-          <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#fff", fontStyle: "italic" }}>Invest</span>
+          <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#fff" }}>Invest</span>
         </div>
         <div className={styles.copyright}>
           © 2025 HotInvest S.A - Instituição de Pagamento. 54.139.158/0001-76. Centro, São Pedro, SP - 13520-000
