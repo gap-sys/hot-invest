@@ -1,9 +1,7 @@
 'use client'
 
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 
 import styles from './mission.module.scss';
 
@@ -66,45 +64,20 @@ export default function Mission() {
             '(min-width: 1024px)': { slidesToScroll: 3 },
         },
     });
-    const [canScrollPrev, setCanScrollPrev] = useState(false);
-    const [canScrollNext, setCanScrollNext] = useState(false);
-
-    const onSelect = useCallback(() => {
-        if (!emblaApi) return;
-        setCanScrollPrev(emblaApi.canScrollPrev());
-        setCanScrollNext(emblaApi.canScrollNext());
-    }, [emblaApi]);
-
     useEffect(() => {
         if (!emblaApi) return;
-        onSelect();
-        emblaApi.on('select', onSelect);
-        emblaApi.on('reInit', onSelect);
-    }, [emblaApi, onSelect]);
+        const timer = setInterval(() => {
+            if (!emblaApi) return;
+            emblaApi.scrollNext();
+        }, 5000);
+        return () => clearInterval(timer);
+    }, [emblaApi]);
 
     return (
         <section className={styles.section}>
             <div className={styles.contentWrapper}>
                 <div className={styles.headerColumn}>
                     <h2 className={styles.title}>Missão, visão e valores HotInvest</h2>
-                    <div className={styles.controls}>
-                        <button
-                            className={styles.prevBtn}
-                            aria-label="Anterior"
-                            onClick={() => emblaApi && emblaApi.scrollPrev()}
-                            disabled={!canScrollPrev}
-                        >
-                            <IconChevronLeft size={26} />
-                        </button>
-                        <button
-                            className={styles.nextBtn}
-                            aria-label="Próximo"
-                            onClick={() => emblaApi && emblaApi.scrollNext()}
-                            disabled={!canScrollNext}
-                        >
-                            <IconChevronRight size={26} />
-                        </button>
-                    </div>
                 </div>
                 <div className={styles.carouselWrapper}>
                     <div className={styles.carousel} ref={emblaRef}>
