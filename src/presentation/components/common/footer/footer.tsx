@@ -53,10 +53,6 @@ export default function Footer() {
           <h4>Fale com a gente</h4>
           <ul>
             <li>
-              Capitais e regiões metropolitanas<br />
-              <strong>(19) 3483-4454</strong>
-            </li>
-            <li>
               Demais localidades<br />
               <strong>0800 000 0120</strong>
             </li>

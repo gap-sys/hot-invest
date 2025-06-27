@@ -130,7 +130,7 @@ const PrivacyPolicy = () => {
                     <h2>10. CANAIS DE ATENDIMENTO</h2>
                     <p>Atendimento ao Cliente:</p>
                     <ul>
-                        <li>Telefone: (19) 3483-4454 | 0800 000 0120</li>
+                        <li>Telefone: 0800 000 0120</li>
                         <li>E-mail: sac@hotinvest.com.br</li>
                     </ul>
                     <p>Responsáveis por Notificações:</p>
