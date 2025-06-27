@@ -1,6 +1,14 @@
 @import '../../../styles/themes/light.scss';
 @import '../../../styles/themes/mixins.scss';
 
+.container {
+  width: 100%;
+  background: linear-gradient(90deg, rgba(239,86,53,0.05) 0%, rgba(22,72,126,0.05) 100%);
+  padding: 64px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .serviceSection {
   @include container(1180px,4.5rem auto 0 auto);
   padding:84px 2rem 84px 2rem;
@@ -94,6 +102,8 @@
   margin-bottom: 0;
   gap: 24px;
   min-height: 80px;
+  border-left: 4px solid $color-primary;
+  transition: box-shadow 0.3s, transform 0.3s;
   @media (max-width: 900px) {
     border-radius: 1.2rem;
     width: 100%;
@@ -110,6 +120,11 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
 }
 
 .iconCol {
