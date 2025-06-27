@@ -24,7 +24,7 @@ export default function Service() {
                             <div className={styles.cardTitle}>Se preferir, ligue:</div>
                             <div className={styles.phoneBlock}>
                                 <span className={styles.phone}>0800 000 0120</span>
-                                <span className={styles.phoneDesc}>Demais localidades</span>
+                                <span className={styles.phoneDesc}>Atendimento nacional</span>
                             </div>
                         </div>
                     </div>
