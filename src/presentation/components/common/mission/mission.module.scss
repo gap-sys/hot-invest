@@ -3,7 +3,7 @@
 
 .section {
   width: 100%;
-  padding: 48px 2rem 0 2rem;
+  padding: 80px 2rem 40px 2rem;
   margin-top: 4rem;
   overflow-x: hidden;
   display: flex;
@@ -23,12 +23,6 @@
     align-items: flex-start;
     margin-right: 48px;
     margin-bottom: 24px;
-    .controls {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-size: 26px;
-    }
 }
 
 .title {
@@ -130,26 +124,6 @@
   transition: color 0.2s;
 }
 
-.prevBtn, .nextBtn {
-  background: $color-primaryHover;
-  border: none;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  box-shadow: none;
-  margin-top: 1.4rem;
-  cursor: pointer;
-  transition: background 0.2s, border 0.2s;
-  margin: 0;
-}
-.prevBtn:hover, .nextBtn:hover {
-  background: $color-primary;
-  border: none;
-}
 
 @media (max-width: 1823px) {  
     .contentWrapper {
@@ -179,12 +153,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
- 
-        .controls {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }
 }
 
@@ -208,12 +176,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
- 
-        .controls {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }
   .carousel {
     width: 95vw;
@@ -243,29 +205,16 @@
   }
   .section {
     align-items: flex-start;
-    padding: 32px 0 0 0;
+    padding: 48px 0 24px 0;
   }
   .slide {
     flex: 0 0 100%;
     padding: 0 8px;
   }
-  .prevBtn, .nextBtn {
-    top: 0;
-    left: 0;
-  }
-  .nextBtn {
-    left: 56px;
-  } 
   .headerColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .controls {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
+  }
 }
