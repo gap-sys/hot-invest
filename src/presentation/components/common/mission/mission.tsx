@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
+// Mission cards scroll continuously across the screen
 
 import styles from './mission.module.scss';
 
@@ -51,51 +50,27 @@ const articles = [
 ];
 
 export default function Mission() {
-    const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: true,
-        align: 'start',
-        skipSnaps: false,
-        slidesToScroll: 1,
-        dragFree: false,
-        containScroll: 'trimSnaps',
-        breakpoints: {
-            '(max-width: 767px)': { slidesToScroll: 1 },
-            '(min-width: 768px) and (max-width: 1023px)': { slidesToScroll: 2 },
-            '(min-width: 1024px)': { slidesToScroll: 3 },
-        },
-    });
-    useEffect(() => {
-        if (!emblaApi) return;
-        const timer = setInterval(() => {
-            if (!emblaApi) return;
-            emblaApi.scrollNext();
-        }, 5000);
-        return () => clearInterval(timer);
-    }, [emblaApi]);
-
+    const repeated = [...articles, ...articles];
+  
     return (
         <section className={styles.section}>
-            <div className={styles.contentWrapper}>
-                <div className={styles.headerColumn}>
-                    <h2 className={styles.title}>Missão, visão e valores HotInvest</h2>
-                </div>
-                <div className={styles.carouselWrapper}>
-                    <div className={styles.carousel} ref={emblaRef}>
-                        <div className={styles.track}>
-                            {articles.map((article, idx) => (
-                                <div className={styles.slide} key={idx}>
-                                    <div className={styles.card}>
-                                        <div className={styles.cardImage}>
-                                            <img src={article.image} alt={article.title} />
-                                        </div>
+            <h2 className={styles.title}>Missão, visão e valores HotInvest</h2>
+            <div className={styles.carouselWrapper}>
+                <div className={styles.carousel}>
+                    <div className={styles.track}>
+                        {repeated.map((article, idx) => (
+                            <div className={styles.slide} key={idx}>
+                                <div className={styles.card}>
+                                    <div className={styles.cardImage}>
+                                        <img src={article.image} alt={article.title} />
+                                    </div>
                                         <div className={styles.cardContent}>
                                             <div className={styles.cardTitle}>{article.description}</div>
                                             <div className={styles.cardDescription}>{article.title}</div>
                                         </div>
                                     </div>
                                 </div>
-                            ))}
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
