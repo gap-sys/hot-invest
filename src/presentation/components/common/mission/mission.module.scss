@@ -29,7 +29,7 @@
 }
 .carousel {
   width: 100vw;
-  padding-bottom: 40px;
+  padding: 20px 0 40px 0;
   position: relative;
   overflow: hidden;
   background: transparent;
@@ -123,6 +123,7 @@
 @media (max-width: 1323px) {
   .carousel {
     width: 95vw;
+    padding-top: 20px;
   }
   .slide {
     flex: 0 0 50%;
@@ -132,7 +133,7 @@
 @media (max-width: 767px) {
   .carousel {
     width: 100vw;
-    padding-bottom: 24px;
+    padding: 20px 0 24px 0;
   }
   .card {
     width: 90vw;
