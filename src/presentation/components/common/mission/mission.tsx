@@ -51,7 +51,7 @@ const articles = [
 
 export default function Mission() {
     const repeated = [...articles, ...articles];
-  
+
     return (
         <section className={styles.section}>
             <h2 className={styles.title}>Missão, visão e valores HotInvest</h2>
