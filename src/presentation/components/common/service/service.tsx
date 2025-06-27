@@ -10,7 +10,7 @@ export default function Service() {
         <section id="atendimento" className={styles.container}>
             <div className={styles.serviceSection}>
                 <div className={styles.left}>
-                    <h2 className={styles.title}>Canais de atendimento</h2>
+                    <h2 className={styles.title}>Fale conosco</h2>
                     <p className={styles.subtitle}>
                         Atendimento disponível 24h por dia pelo chat no aplicativo HotInvest.
                     </p>
