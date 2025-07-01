@@ -1,4 +1,5 @@
 import { Meta, Navbar, Header, Footer, StepsOpen, Card, FAQ, Service, Benefits, Mission } from 'src/presentation/components'
+import headerStyles from 'src/presentation/components/common/header/header.module.scss'
 import { IMAGE } from 'src/presentation/assets'
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
           <>
             Não é só um banco<br />
             É o futuro, do seu jeito<br />
-            É <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E"}}>Invest</span>
+            É <span className={headerStyles.highlight}><span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E", fontWeight: 400 }}>Invest</span></span>
           </>
         }
         image={IMAGES.src}
