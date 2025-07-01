@@ -11,6 +11,7 @@ import SIMPLICIDADE from './SIMPLICIDADE.jpg'
 import VISAO from './VISAO.jpg'
 import MISSAO from './MISSAO.jpg'
 import HEADER_IMAGE from './HEADER_IMAGE.jpg'
+import FALE_CONOSCO from './FALE-CONOSCO.png'
 
 const IMAGE = {
   HEADER_IMAGE,
@@ -26,6 +27,7 @@ const IMAGE = {
   SIMPLICIDADE,
   VISAO,
   MISSAO,
+  FALE_CONOSCO,
 }
 
 export default IMAGE
