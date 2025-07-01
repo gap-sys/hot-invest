@@ -1,48 +1,48 @@
 "use client";
 
-import { FiPhoneCall } from "react-icons/fi";
-import { FaHandPeace } from "react-icons/fa";
+import { FiPhoneCall, FiMail, FiMapPin } from "react-icons/fi";
 
 import styles from "./service.module.scss";
 import { IMAGE } from "src/presentation/assets";
 
 export default function Service() {
+    const Form = () => (
+        <form className={styles.form}>
+            <input className={styles.input} type="text" placeholder="Nome" />
+            <input className={styles.input} type="email" placeholder="E-mail" />
+            <input className={styles.input} type="text" placeholder="Telefone" />
+            <textarea className={styles.textarea} placeholder="Mensagem" />
+            <button className={styles.submit}>Enviar</button>
+        </form>
+    );
+
     return (
-        <section
-            id="atendimento"
-            className={styles.container}
-            style={{ backgroundImage: `url(${IMAGE.FALE_CONOSCO.src})` }}
-        >
-            <div className={styles.serviceSection}>
-                <div className={styles.left}>
-                    <h2 className={styles.title}>Fale conosco</h2>
-                    <p className={styles.subtitle}>
-                        Atendimento disponível 24h por dia pelo chat no aplicativo HotInvest.
-                    </p>
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.card}>
-                        <div className={styles.iconCol}>
-                            <FiPhoneCall className={styles.iconMain} />
-                        </div>
-                        <div>
-                            <div className={styles.cardTitle}>Se preferir, ligue:</div>
-                            <div className={styles.phoneBlock}>
-                                <span className={styles.phone}>0800 000 0120</span>
-                                <span className={styles.phoneDesc}>Atendimento nacional</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.card}>
-                        <div className={styles.iconCol}>
-                            <FaHandPeace className={styles.iconSecondary} />
-                        </div>
-                        <p className={styles.linkPurple}>
-                            Canal de atendimento em libras pelo aplicativo HotInvest
+        <>
+            <section
+                id="atendimento"
+                className={styles.container}
+                style={{ backgroundImage: `url(${IMAGE.FALE_CONOSCO.src})` }}
+            >
+                <div className={styles.serviceSection}>
+                    <div className={styles.left}>
+                        <h2 className={styles.title}>Fale Conosco</h2>
+                        <p className={styles.subtitle}>
+                            Atendimento disponível 24h por dia pelo chat no aplicativo Hotinvest
                         </p>
+                        <ul className={styles.contacts}>
+                            <li><FiMail className={styles.icon} />sac@hotinvest.com.br</li>
+                            <li><FiPhoneCall className={styles.icon} />0800 000 0120</li>
+                            <li><FiMapPin className={styles.icon} />Rua Campos Salles, 940, Santa Cruz, São Pedro – SP.</li>
+                        </ul>
+                    </div>
+                    <div className={styles.formDesktop}>
+                        <Form />
                     </div>
                 </div>
+            </section>
+            <div className={styles.formMobile}>
+                <Form />
             </div>
-        </section >
+        </>
     );
 }
