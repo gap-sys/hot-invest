@@ -45,7 +45,7 @@ const BENEFITS = [
 const Benefits = () => {
     return (
         <section id="beneficios" className={styles.section}>
-            <h2 className={styles.title}>
+            <h2 className={styles.title}>xto
                 Tudo o que você precisa, com a conta da <span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E", fontWeight: 300 }}>Invest</span>.
             </h2>
             <div className={styles.grid}>
