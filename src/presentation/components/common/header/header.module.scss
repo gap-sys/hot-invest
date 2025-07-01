@@ -34,13 +34,46 @@
         font-size: $font-large;
         color: $color-snow;
         line-height: 48px;
-        margin-bottom: 2rem;  
+        margin-bottom: 2rem;
         font-weight: 500;
          @media (max-width: 1024px) {
           font-size: 34px;
           line-height: 34px;
           font-weight: 500;
           color: $color-snow;
+        }
+      }
+      .highlight {
+        position: relative;
+        display: inline-block;
+        padding: 0 0.25rem;
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          left: -0.25rem;
+          right: -0.25rem;
+          top: 50%;
+          height: 1em;
+          transform: translateY(-50%) rotate(-2deg);
+          border-radius: 8px;
+          background:
+            linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0) 0%,
+              rgba(255, 255, 255, 0.85) 10%,
+              rgba(255, 255, 255, 0.7) 90%,
+              rgba(255, 255, 255, 0) 100%
+            ),
+            repeating-linear-gradient(
+              45deg,
+              rgba(255, 255, 255, 0.8) 0,
+              rgba(255, 255, 255, 0.8) 3px,
+              rgba(255, 255, 255, 0.6) 3px,
+              rgba(255, 255, 255, 0.6) 6px
+            );
+          background-blend-mode: multiply;
+          filter: blur(1px);
         }
       }
     }
