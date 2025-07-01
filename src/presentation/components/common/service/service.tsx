@@ -4,10 +4,15 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaHandPeace } from "react-icons/fa";
 
 import styles from "./service.module.scss";
+import { IMAGE } from "src/presentation/assets";
 
 export default function Service() {
     return (
-        <section id="atendimento" className={styles.container}>
+        <section
+            id="atendimento"
+            className={styles.container}
+            style={{ backgroundImage: `url(${IMAGE.FALE_CONOSCO.src})` }}
+        >
             <div className={styles.serviceSection}>
                 <div className={styles.left}>
                     <h2 className={styles.title}>Fale conosco</h2>
