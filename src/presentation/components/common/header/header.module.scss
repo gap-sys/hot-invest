@@ -51,13 +51,13 @@
           content: "";
           position: absolute;
           z-index: -1;
-          left: -0.25rem;
-          right: -0.25rem;
+          left: -0.35rem;
+          right: -0.35rem;
           top: 50%;
-          height: 1em;
+          height: 1.2em;
           transform: translateY(-50%) rotate(-2deg);
           background-image: url('../../../assets/images/tinta.png');
-          background-size: contain;
+          background-size: 110% 110%;
           background-repeat: no-repeat;
           background-position: center;
         }
