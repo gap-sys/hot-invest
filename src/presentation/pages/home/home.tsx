@@ -20,7 +20,7 @@ const Home = () => {
           <>
             Não é só um banco<br />
             É o futuro, do seu jeito<br />
-            É <span className={headerStyles.highlight}><span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E", fontWeight: 400 }}>Invest</span></span>
+            É <span className={headerStyles.highlight}><span style={{ color: "#EF5635" }}>Hot</span><span style={{ color: "#16487E", fontWeight: 300 }}>Invest</span></span>
           </>
         }
         image={IMAGES.src}
