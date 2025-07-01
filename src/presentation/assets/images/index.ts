@@ -12,6 +12,7 @@ import VISAO from './VISAO.jpg'
 import MISSAO from './MISSAO.jpg'
 import HEADER_IMAGE from './HEADER_IMAGE.jpg'
 import FALE_CONOSCO from './FALE-CONOSCO.png'
+import TINTA from './tinta.png'
 
 const IMAGE = {
   HEADER_IMAGE,
@@ -28,6 +29,7 @@ const IMAGE = {
   VISAO,
   MISSAO,
   FALE_CONOSCO,
+  TINTA,
 }
 
 export default IMAGE
