@@ -2,13 +2,16 @@
 @import '../../../styles/themes/mixins.scss';
 
 .container {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 64px 0;
   display: flex;
   justify-content: center;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .serviceSection {
