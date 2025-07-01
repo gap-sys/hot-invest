@@ -50,7 +50,7 @@
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 24px;
-  color: lighten($color-primary, 30%);
+  color: $color-secondary;
   @media (max-width: 900px) {
     font-size: 2rem;
     margin-bottom: 14px;
@@ -259,7 +259,7 @@
 
     svg {
       margin-right: 0.5rem;
-      color: lighten($color-primary, 30%);
+      color: $color-secondary;
     }
   }
 }
